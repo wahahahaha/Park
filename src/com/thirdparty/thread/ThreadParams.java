@@ -41,4 +41,8 @@ public class ThreadParams {
 	public boolean hasKey(String key) {
 		return params.containsKey(key);
 	}
+
+	public HashMap<String, Object> getHashMap() {
+		return params;
+	}
 }

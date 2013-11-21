@@ -18,35 +18,28 @@ import com.thirdparty.park.ParkApplication;
  * 
  * @Version: 1.0
  **/
-public class Utility
-{
-	public static int dip2px(int dipValue)
-	{
-		try
-		{
+public class Utility {
+	public static int dip2px(int dipValue) {
+		try {
 			float scale = ParkApplication.getInstance().getResources()
-			        .getDisplayMetrics().density;
+					.getDisplayMetrics().density;
 
 			return (int) (dipValue * scale + 0.5f);
-		}
-		catch (Exception e)
-		{
+		} catch (Exception e) {
 			return 0;
 		}
 	}
 
-	public static int px2dip(int pxValue)
-	{
+	public static int px2dip(int pxValue) {
 		float scale = ParkApplication.getInstance().getResources()
-		        .getDisplayMetrics().density;
+				.getDisplayMetrics().density;
 
 		return (int) ((pxValue / scale) + 0.5f);
 	}
 
-	public static float sp2px(int spValue)
-	{
+	public static float sp2px(int spValue) {
 		return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, spValue,
-		        ParkApplication.getInstance().getResources()
-		                .getDisplayMetrics());
+				ParkApplication.getInstance().getResources()
+						.getDisplayMetrics());
 	}
 }

@@ -1,7 +1,6 @@
 package com.thirdparty.thread;
 
-public interface ThreadListener
-{
+public interface ThreadListener {
 	String getName();
 
 	void onPreExecute(GenericThread task);
