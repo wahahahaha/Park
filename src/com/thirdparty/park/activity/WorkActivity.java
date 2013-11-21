@@ -1,4 +1,4 @@
-package com.thirdparty.activity;
+package com.thirdparty.park.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
